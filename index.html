@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Bezier curves</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #myCanvas {
+            display: block;
+            margin: 0 auto;
+            border: 5px solid rgb(146, 31, 31);
+        }
+
+        #buttonDraw {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Bezier curves</h1>
+    
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    
+    <div id = "buttonDraw">
+        <input type="number" id="numberOfLines" min="1" value="10">
+        <br>
+        <button id="buttonDraw" onclick="BezierCurve1(document.getElementById('numberOfLines').value)">Draw</button>
+    </div>
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
